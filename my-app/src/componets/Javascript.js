@@ -1,5 +1,3 @@
 export default function Javascript(){
-    return(
-         
-    )
+    return
 }
