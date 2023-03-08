@@ -1,34 +1,39 @@
-
-
 import './App.css';
 import javascript from './componets/Javascript';
 import Css from './componets/Css';
 import Html from './componets/Html';
 import React from './componets/React';
 import Sanity from './componets/Sanity';
+
+
 function App() {
   return (
 
       
     <body>
-        <div class="container">
+        <div className='container'>
         <header>
     <h1>ressursarkiv</h1>
         </header>
         <nav>
-            <button onclick="html()" class="Kategori">
+            <button onclick="html()" className='Kategori'>
                 <h2>html</h2>
             </button>
-            <button onclick="css()" class="Kategori">
+            <button onclick="css()" className='Kategori'>
                 <h2>css</h2>
             </button>
-            <button onclick="javascript()" class="Kategori">
+            <button onclick="javascript()" className='Kategori'>
                 <h2>javascript</h2>
             </button>
-            <button onclick="react()" class="Kategori">
+            <button onclick="react()" className='Kategori'>
                 <h2>react</h2>
+
             </button>   
             <button onclick="headless()" class="Kategori">
+
+            </button>
+            <button onclick="headless()" className='Kategori'>
+>
                 <h2>sanity of headless cms</h2>
             </button>
         </nav>
@@ -36,7 +41,6 @@ function App() {
             <h2></h2>
         </main>
     </div>
-          <script src="ressurser.js"></script>
     </body>
   );
 }
