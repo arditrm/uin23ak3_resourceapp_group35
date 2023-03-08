@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+
+
 import './App.css';
 import Javascript from './componets/Javascript';
 import Css from './componets/Css';
@@ -7,6 +8,7 @@ import React from './componets/React';
 import Sanity from './componets/Sanity';
 function App() {
   return (
+
       
     <body>
         <div class="container">
@@ -36,7 +38,6 @@ function App() {
     </div>
           <script src="ressurser.js"></script>
     </body>
-
   );
 }
 
