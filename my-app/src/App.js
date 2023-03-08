@@ -5,6 +5,8 @@ import Css from './componets/Css';
 import Html from './componets/Html';
 import React from './componets/React';
 import Sanity from './componets/Sanity';
+
+
 function App() {
   return (
 
@@ -26,13 +28,18 @@ function App() {
             </button>
             <button onclick="react()" className='Kategori'>
                 <h2>react</h2>
+
+            </button>   
+            <button onclick="headless()" class="Kategori">
+
             </button>
             <button onclick="headless()" className='Kategori'>
+
                 <h2>sanity of headless cms</h2>
             </button>
         </nav>
         <main id="main">
-            <h2></h2>
+            <h2>hhdhsdsj</h2>
         </main>
     </div>
     </body>
