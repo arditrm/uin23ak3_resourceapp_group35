@@ -1,10 +1,8 @@
 //import './App.css';
-import './css/main.css';
-import Javascript from './componets/Javascript';
-import Css from './componets/Css';
-import Html from './componets/Html';
-import React from './componets/React';
-import Sanity from './componets/Sanity';
+import './css/sass/main.scss';
+import React from './components/React';
+
+
 
 
 function App() {
@@ -31,9 +29,7 @@ function App() {
                 <h2>react</h2>
 
             </button>   
-            <button onclick="headless()" class="Kategori">
-
-            </button>
+            
             <button onclick="headless()" className='Kategori'>
 
                 <h2>sanity of headless cms</h2>
