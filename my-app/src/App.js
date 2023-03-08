@@ -27,7 +27,7 @@ function App() {
             </button>
             <button onclick="react()" class="Kategori">
                 <h2>react</h2>
-            </button>
+            </button>   
             <button onclick="headless()" class="Kategori">
                 <h2>sanity of headless cms</h2>
             </button>

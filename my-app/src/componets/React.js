@@ -1,3 +1,5 @@
 export default function React(){
-    return
+    return(
+    <h2>test</h2>
+    )
 }

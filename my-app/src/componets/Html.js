@@ -1,3 +1,6 @@
 export default function Html(){
-    return
+    return(
+        <h2> hjelp</h2>
+    )
+    
 }

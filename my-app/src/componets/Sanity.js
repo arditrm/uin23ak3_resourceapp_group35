@@ -1,3 +1,5 @@
 export default function Sanity(){
-    return
+    return(
+        <h3>test</h3>
+    )
 }
