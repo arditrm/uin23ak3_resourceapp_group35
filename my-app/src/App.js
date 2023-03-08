@@ -9,24 +9,24 @@ function App() {
 
       
     <body>
-        <div class="container">
+        <div className='container'>
         <header>
     <h1>ressursarkiv</h1>
         </header>
         <nav>
-            <button onclick="html()" class="Kategori">
+            <button onclick="html()" className='Kategori'>
                 <h2>html</h2>
             </button>
-            <button onclick="css()" class="Kategori">
+            <button onclick="css()" className='Kategori'>
                 <h2>css</h2>
             </button>
-            <button onclick="javascript()" class="Kategori">
+            <button onclick="javascript()" className='Kategori'>
                 <h2>javascript</h2>
             </button>
-            <button onclick="react()" class="Kategori">
+            <button onclick="react()" className='Kategori'>
                 <h2>react</h2>
             </button>
-            <button onclick="headless()" class="Kategori">
+            <button onclick="headless()" className='Kategori'>
                 <h2>sanity of headless cms</h2>
             </button>
         </nav>
