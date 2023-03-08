@@ -1,4 +1,5 @@
-import './App.css';
+//import './App.css';
+import './css/main.css';
 import Javascript from './componets/Javascript';
 import Css from './componets/Css';
 import Html from './componets/Html';
