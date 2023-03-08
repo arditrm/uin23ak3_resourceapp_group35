@@ -1,5 +1,3 @@
-
-
 import './App.css';
 import Javascript from './componets/Javascript';
 import Css from './componets/Css';
@@ -36,7 +34,6 @@ function App() {
             <h2></h2>
         </main>
     </div>
-          <script src="ressurser.js"></script>
     </body>
   );
 }
