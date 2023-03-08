@@ -1,9 +1,9 @@
 import './App.css';
-import Javascript from './componets/Javascript';
-import Css from './componets/Css';
-import Html from './componets/Html';
-import React from './componets/React';
-import Sanity from './componets/Sanity';
+import Javascript from './components/Javascript';
+import Css from './components/Css';
+import Html from './components/Html';
+import React from './components/React';
+import Sanity from './components/Sanity';
 function App() {
   return (
 
