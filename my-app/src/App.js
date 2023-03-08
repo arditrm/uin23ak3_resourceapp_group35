@@ -1,7 +1,7 @@
 
 
 import './App.css';
-import Javascript from './componets/Javascript';
+import javascript from './componets/Javascript';
 import Css from './componets/Css';
 import Html from './componets/Html';
 import React from './componets/React';
