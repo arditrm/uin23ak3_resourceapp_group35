@@ -1,18 +1,14 @@
 import React, { useState } from "react";
-import resources from "./ressurser";
+
+import resources from "./ressurser"
 
 export default function Nav() {
-  const handleButtonClick = (category) => {
-    // Filter the resources array to get only the items in the selected category
-    const categoryResources = resources.filter(
-      (resource) => resource.category.toLowerCase() === category.toLowerCase()
-    );
+  const [selectedResources, setSelectedResources] = useState([]);
 
-    // Set the state with the selected category resources
+  const handleButtonClick = (category) => {
+    const categoryResources = resources.filter((resource) => resource.category.toLowerCase() === category.toLowerCase());
     setSelectedResources(categoryResources);
   };
-
-  const [selectedResources, setSelectedResources] = useState([]);
 
   return (
     <div className="container">
@@ -21,16 +17,13 @@ export default function Nav() {
       </header>
 
       <nav>
-        <button onClick={() => handleButtonClick("html")} className="Kategori">
+        <button onClick={() => handleButtonClick("HTML")} className="Kategori">
           <h2>HTML</h2>
         </button>
         <button onClick={() => handleButtonClick("CSS")} className="Kategori">
           <h2>CSS</h2>
         </button>
-        <button
-          onClick={() => handleButtonClick("JavaScript")}
-          className="Kategori"
-        >
+        <button onClick={() => handleButtonClick("JavaScript")} className="Kategori">
           <h2>JavaScript</h2>
         </button>
 
@@ -38,22 +31,28 @@ export default function Nav() {
           <h2>React</h2>
         </button>
 
-        <button
-          onClick={() => handleButtonClick("Sanity and headless CMS")}
-          className="Kategori"
-        >
+        <button onClick={() => handleButtonClick("Sanity and headless CMS")} className="Kategori">
           <h2>Sanity of headless CMS</h2>
         </button>
       </nav>
 
       <main id="main">
-        <h2>Selected Resources</h2>
-        <ul>
-          {selectedResources.map((resource) => (
-            <li key={resource.id}>{resource.title}</li>
-          ))}
-        </ul>
+        {selectedResources.map((resource, index) => (
+          <div key={index}>
+            <h3>{resource.category}</h3>
+            <p>{resource.text}</p>
+            <ul>
+              {resource.sources.map((source, index) => (
+                <li key={index}>
+                  <a href={source.url} target="_blank" rel="noopener noreferrer">
+                    {source.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </main>
     </div>
   );
-}   
+}
