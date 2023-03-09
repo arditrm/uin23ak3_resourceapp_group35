@@ -1,7 +1,7 @@
 //import './App.css';
 import './css/sass/main.scss';
-import React from './components/React';
-
+import resources from './components/ressurser';
+import Nav from './components/Nav';
 
 
 
